@@ -20,7 +20,7 @@ This section discusses the change to the configuration over time. Since v4.36.0 
 performed where possible in memory (the file is unchanged). The automatic process generates warnings and the automatic
 migrations are disabled in major version bumps.
 
-If you're running a version prior to v4.36.0 this it may require manual migration by the administrator. Typically this
+If you're running a version prior to v4.36.0 this may require manual migration by the administrator. Typically this
 only occurs when a configuration key is renamed or moved to a more appropriate location.
 
 ## Format
@@ -74,7 +74,7 @@ The following changes occurred in 4.30.0:
 {{< callout context="note" title="Note" icon="outline/info-circle" >}}
 You can't define secrets for providers that you are not using. For example if you're using the
 [filesystem notifier](../notifications/introduction.md) you must ensure that the `AUTHELIA_NOTIFIER_SMTP_PASSWORD_FILE`
-environment variable or other environment variables set. This also applies to other providers like
+environment variable or other environment variables are not set. This also applies to other providers like
 [storage](../storage/introduction.md) and [authentication backend](../first-factor/introduction.md).
 {{< /callout >}}
 
@@ -92,7 +92,7 @@ The following changes occurred in 4.25.0:
 
 |                  Previous Key                   |                     New Key                     |
 |:-----------------------------------------------:|:-----------------------------------------------:|
-|   authentication_backend.ldap.tls.skip_verify   |   authentication_backend.ldap.tls.skip_verify   |
+|     authentication_backend.ldap.skip_verify     |   authentication_backend.ldap.tls.skip_verify   |
 | authentication_backend.ldap.minimum_tls_version | authentication_backend.ldap.tls.minimum_version |
 |        notifier.smtp.disable_verify_cert        |          notifier.smtp.tls.skip_verify          |
 |           notifier.smtp.trusted_cert            |             certificates_directory              |
