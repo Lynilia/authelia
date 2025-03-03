@@ -34,7 +34,7 @@ We document the configuration in two ways:
 ## Validation
 
 Authelia validates the configuration when it starts. This process checks multiple factors including configuration keys
-that don't exist, configuration keys that have changed, the values of the keys are valid, and that a configuration
+that don't exist, configuration keys that have changed, that the values of the keys are valid, and that a configuration
 key isn't supplied at the same time as a secret for the same configuration option.
 
 You may also optionally validate your configuration against this validation process manually by using the
