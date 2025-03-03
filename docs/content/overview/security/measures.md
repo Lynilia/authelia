@@ -301,7 +301,7 @@ security risk.
 
 The [OWASP](https://owasp.org/) helpful
 [HTTP Security Response Headers Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html)
-was used as a basis for most of the decisions regarding these headers. Users who which to customize the behavior should
+was used as a basis for most of the decisions regarding these headers. Users who wish to customize the behavior should
 consider this cheat sheet mandatory reading before they do so.
 
 #### X-XSS-Protection
