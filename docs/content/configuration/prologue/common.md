@@ -210,7 +210,7 @@ scheme and port `80` the correct address would be `tcp://[::1]:80`.
 
 #### port
 
-The hostname is required if the scheme is one of the `tcp` or `udp` schemes and there is no [hostname](#hostname)
+The port is required if the scheme is one of the `tcp` or `udp` schemes and there is no [hostname](#hostname)
 specified.
 
 ### Regular Expressions
