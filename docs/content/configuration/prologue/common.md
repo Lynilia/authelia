@@ -54,7 +54,7 @@ The following is ignored or stripped from the input:
   - leading zeros
   - the word `and`
 
-While you can use multiple of these blocks in combination, we suggest keeping it simple and use a single value. In
+While you can use multiple of these blocks in combination, we suggest keeping it simple and using a single value. In
 addition it's important to note that the format while somewhat human readable still requires you closely follow the
 expected formats.
 
