@@ -14,7 +14,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Authelia contains several security sensitive values which are documented as such and are also generally are named
+Authelia contains several security sensitive values which are documented as such and are also generally named
 `secret`, `key`, `password`, `token`, or `certificate_chain`; alternatively they may be suffixed with a `_` followed by one
 of the previous values.
 
@@ -24,20 +24,20 @@ leaking the values when getting support and is generally slightly less secure.
 There are three special ways to achieve this goal:
 
 1. Using the native [Secrets](../methods/secrets.md) system which:
-   - Loads the value from a file provided an environment variable with the file's location.
-   - Generally easy to set up.
+   - Loads the value from a file provided by an environment variable with the file's location.
+   - Is generally easy to set up.
    - Can't be used for keys located within lists.
    - Does not include the value in the environment which is slightly more secure.
 2. Using the `template` [file filter](../methods/files.md#file-filters) system which:
-   - Loads the value from a file provided a template within the configuration itself making it easy to share.
-   - Generally easy to set up but has a small learning curve.
+   - Loads the value from a file provided by a template within the configuration itself making it easy to share.
+   - Is generally easy to set up but has a small learning curve.
    - Can be used anywhere in the configuration generally for any purpose.
    - Does not include the value in the environment which is slightly more secure.
 3. Using the native [Environment](../methods/environment.md) system which:
-  - Loads the value from the environment variable itself
-  - Generally easy to set up.
-  - Can't be used keys located within lists.
-  - Does include the value in the environment which is slightly less secure.
+   - Loads the value from the environment variable itself
+   - Is generally easy to set up.
+   - Can't be used for keys located within lists.
+   - Does include the value in the environment which is slightly less secure.
 
 
 ## Template Example
@@ -68,7 +68,7 @@ identity_providers:
 
 ### Multi-Line Value
 
-This example shows how to do a multi-line value. QuotiThng is not possible in this scenario as such it's excluded.
+This example shows how to do a multi-line value. Quoting is not possible in this scenario as such it's excluded.
 
 It's important to note the use of [mindent]:
 
