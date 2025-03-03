@@ -43,8 +43,8 @@ If properly configured, Authelia guarantees the following for security of your u
 * Brute force attacks against credentials are protected thanks to a regulation mechanism temporarily blocking the user
   account after too many attempts and delays to the authentication process.
 * Identity validation is required for performing administrative actions such as registering 2FA devices, preventing
-  attackers to pass two-factor authentication by self-registering their own device. An email with a link is sent to the
-  user with a link providing them access to the registration flow which can only be opened by a single session.
+  attackers to pass two-factor authentication by self-registering their own device. An email is sent to the user with a
+  link providing them access to the registration flow which can only be opened by a single session.
 * Prevention against session fixation by regenerating a new session after each privilege elevation.
 * Prevention against LDAP injection by following
   [OWASP recommendations](https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html)
