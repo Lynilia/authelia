@@ -167,7 +167,7 @@ depending on if you have a large quantity of users.
 Ideally on average hardware the amount of time would be roughly 500 milliseconds at minimum.
 
 In consideration of your cost you should take into account the fact some algorithms only support scaling the cost for
-one factor and not others It's usually considered better to have a mix of cost types however this is not possible with
+one factor and not others. It's usually considered better to have a mix of cost types however this is not possible with
 all algorithms. The main cost type measurements are:
 
 * CPU
