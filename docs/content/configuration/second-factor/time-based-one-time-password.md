@@ -147,14 +147,14 @@ minimum.
 
 ### allowed_algorithms
 
-{{< confkey type="list(integer)" default="SHA1" required="no" >}}
+{{< confkey type="list(string)" default="SHA1" required="no" >}}
 
 Similar to [algorithm](#algorithm) with the same restrictions except this option allows users to pick from this list.
 This list will always contain the value configured in the [algorithm](#algorithm) option.
 
 ### allowed_digits
 
-{{< confkey type="list(string)" default="6" required="no" >}}
+{{< confkey type="list(integer)" default="6" required="no" >}}
 
 Similar to [digits](#digits) with the same restrictions except this option allows users to pick from this list. This
 list will always contain the value configured in the [digits](#digits) option.
